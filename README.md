@@ -79,10 +79,10 @@ pip3 install -r requirements.txt  -f https://download.pytorch.org/whl/torch_stab
 #### VGG-6
 | Model                                                | option                          |
 |:-----------------------------------------------------|:--------------------------------|
-| VGG-6 with no normalization layer                    | --model vgg8_nn                 |
-| VGG-6 with batch normalization                       | --model vgg8_bn                 |
-| VGG-6 with layer normalization                       | --model vgg8_ln                 |
-| VGG-6 with group normalization of group size e.g. 32 | --model vgg8_gn --group-size 32 |
+| VGG-6 with no normalization layer                    | --model vgg6_nn                 |
+| VGG-6 with batch normalization                       | --model vgg6_bn                 |
+| VGG-6 with layer normalization                       | --model vgg6_ln                 |
+| VGG-6 with group normalization of group size e.g. 32 | --model vgg6_gn --group-size 32 |
 
 #### ResNet18/34/50/101/152
 | Model                                                   | option                              |
@@ -100,9 +100,9 @@ pip3 install -r requirements.txt  -f https://download.pytorch.org/whl/torch_stab
 | PreactResNet18 with layer normalization                       | --model preact_resnet18_ln                 |
 | PreactResNet18 with group normalization of group size e.g. 32 | --model preact_resnet18_gn --group-size 32 |
 
-#### Note: For the other versions of VGG, ResNet, and DenseNet, please specify the corresponding version number instead of 8, 18, 121, respectively. 
+#### Note: For the other versions of ResNet and PreactResNet, please specify the corresponding version number instead of 18. 
 **Example2**: ResNet50 with group normalization --> --model resnet50_gn \
-**Example3**: PreactResNet34 with layer normalization --> --model preact_resnet50_ln 
+**Example3**: PreactResNet34 with layer normalization --> --model preact_resnet34_ln 
 
 ### Other
 | Description                                                     | option                     |
@@ -129,14 +129,14 @@ python3 simulate.py --dataset imagenette_160px --random-hflip \
                     --learning-rate 0.005 --batch-size 16 --epochs 100
 ```
 
-**Example3**: Train group normalized version of PreactResNet-18 with group size of 32 on CIFAR-100 with SGD optimizer, learning rate of 0.01, momentum of 0.9, and batch size of 16 for 60 epochs. For preprocessing, apply random horizontal flipping and cropping with padding 4x4 to the images. Decay the learning rate by factor of 10 at epochs 30 and 45.
+**Example3**: Train group normalized version of PreactResNet-18 with group size of 32 on CIFAR-100 with SGD optimizer, learning rate of 0.01, momentum of 0.9, and batch size of 16 for 200 epochs. For preprocessing, apply random horizontal flipping and cropping with padding 4x4 to the images. Decay the learning rate by factor of 10 at epochs 100 and 150.
 
 ```
 python3 simulate.py --dataset cifar100 --random-crop 32x32-4x4 \
                     --random-hflip --model preact_resnet18_gn --group-size 32  \
                     --optimizer sgd --momentum 0.9  --learning-rate 0.01 \
-                    --multistep-lr-scheduler --decay-epochs 30,45 --decay-multiplier 0.1 \
-                    --batch-size 16 --epochs 60
+                    --multistep-lr-scheduler --decay-epochs 100,150 --decay-multiplier 0.1 \
+                    --batch-size 16 --epochs 200
 ```
 
 ## Citation

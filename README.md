@@ -1,5 +1,5 @@
 # norm-torch
-**norm-torch** is a PyTorch-based simulation framework to compare the performance of popular convolution neural networks such as **ResNets** and 
+**norm-torch** is a PyTorch-based simulation framework to compare the performance of popular convolutional neural networks such as **ResNets** and 
 **VGGNets** using different normalization layers including **BatchNorm**, **LayerNorm**, **GroupNorm**, and **NoNorm** as baseline.
 
 **The code of KernelNorm, our proposed normalization layer, is coming soon.**

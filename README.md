@@ -6,7 +6,7 @@
 
 # Requirements
 - Python +3.8
-- Torch +1.11
+- PyTorch +1.11
 
 # Installation
 Clone the norm-torch repository:

@@ -1,11 +1,11 @@
 # norm-torch
-**norm-torch** is a PyTorch-based simulation framework to simulate popular convolution neural networks such as **ResNets** and 
+**norm-torch** is a PyTorch-based framework to simulate popular convolution neural networks such as **ResNets** and 
 **VGGNets** using different normalization layers including **BatchNorm**, **LayerNorm**, **GroupNorm**, and **NoNorm** as baseline.
 
 **The code of KernelNorm, our proposed normalization layer, is coming soon.**
 
 # Installation
-Clone the NormTorch repository:
+Clone the norm-torch repository:
 ```
 git clone https://github.com/reza-nasirigerdeh/norm-torch
 ```

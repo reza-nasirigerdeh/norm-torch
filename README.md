@@ -4,6 +4,10 @@
 
 **The code of KernelNorm, our proposed normalization layer, is coming soon.**
 
+# Requirements
+- Python +3.8
+- Torch +1.11
+
 # Installation
 Clone the norm-torch repository:
 ```

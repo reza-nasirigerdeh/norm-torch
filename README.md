@@ -135,7 +135,7 @@ python3 simulate.py --dataset imagenette_160px --random-hflip \
 python3 simulate.py --dataset cifar100 --random-crop 32x32-4x4 \
                     --random-hflip --model preact_resnet18_gn --group-size 32  \
                     --optimizer sgd --momentum 0.9  --learning-rate 0.01 \
-                    --multistep-lr-scheduler --decay-epochs 100,150 --decay-multiplier 0.1 \
+                    --lr-scheduler multi_step --decay-epochs 100,150 --decay-multiplier 0.1 \
                     --batch-size 16 --epochs 200
 ```
 

@@ -262,6 +262,9 @@ def main(args):
     elif args.model == 'knresnet50':
         from models.knresnet.knresnet import knresnet50
         model = knresnet50(num_classes=1000, low_resolution=False)
+    elif args.model == 'knconvnext_tiny':
+        from models.knconvnext.knconvnext import knconvnext_tiny
+        model = knconvnext_tiny(num_classes=1000)
     elif 'resnet' in args.model:
         model_name = args.model[:-3]
         model = torchvision.models.get_model(model_name, weights=args.weights, num_classes=num_classes, norm_layer=norm_layer)

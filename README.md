@@ -113,7 +113,7 @@ The weights of the KNResNet18/34/50 models trained on ImageNet is available in t
 
 <p align="center">
 <img src="imgs/legend.png" width="450" height="30">
-<img src="imgs/knresnet50-imagenet.png" width="800" height="260">
+<img src="imgs/knresnet50-imagenet.png" width="801" height="260">
 </p>
 
 ## Citation

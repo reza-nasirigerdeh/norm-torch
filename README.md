@@ -101,6 +101,15 @@ Next, train the model using the "tools/train.py" script in the aforementioned re
 Please use our another repository dedicated to differentially private learning: </br >
 https://github.com/reza-nasirigerdeh/dp-torch
 
+## Pretrained KNResNets
+The weights of the KNResNet18/34/50 models trained on ImageNet is available in the following: </br >
+
+| Model                    | Top-1 Accuracy | Weights                                                                                                       |
+|:-------------------------|:---------------|:--------------------------------------------------------------------------------------------------------------|
+| KNResNet-18             | 71.17%         | [knresnet18_imagenet.pth](https://drive.google.com/file/d/1oU4IGxErW4l-oqY6vn8V1DL0dBMt1KUO/view?usp=sharing) |
+| KNResNet-34             | 74.60%         | [knresnet34_imagenet.pth](https://drive.google.com/file/d/1dn1O_JHcAP_6gQgvSe5ojV_WzDOB7Lvk/view?usp=sharing) |
+| KNResNet-50             | 76.54%         | [knresnet50_imagenet.pth](https://drive.google.com/file/d/1CSP4HQTQWaR0q2Pdf4GyPfMj6TDE6E2J/view?usp=sharing)                                                                                       |
+
 
 ## Citation
 If you use **norm-torch** in your study, please cite the KernelNorm paper: <br />

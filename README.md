@@ -111,6 +111,11 @@ The weights of the KNResNet18/34/50 models trained on ImageNet is available in t
 | KNResNet-50             | 76.54%         | [knresnet50_imagenet.pth](https://drive.google.com/file/d/1CSP4HQTQWaR0q2Pdf4GyPfMj6TDE6E2J/view?usp=sharing)                                                                                       |
 
 
+<p align="center">
+<img src="imgs/legend.png" width="636" height="43">
+<img src="imgs/knresnet50-imagenet.png" width="1004" height="324">
+</p>
+
 ## Citation
 If you use **norm-torch** in your study, please cite the KernelNorm paper: <br />
    ```

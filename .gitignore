@@ -132,4 +132,4 @@ dmypy.json
 
 /datasets
 /results
-./test.py
+test.py

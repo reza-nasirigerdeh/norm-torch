@@ -125,6 +125,16 @@ The weights of the KNResNet18/34/50 models trained on ImageNet are available in 
 <img src="imgs/knresnet50-imagenet.png" width="801" height="260">
 </p>
 
+To use the pretrained KNResNet-50, for example, you can use the following: </br>
+```
+import torch
+from models.knresnet.knresnet import knresnet50
+
+kn_model = knresnet50(num_classes=1000, low_resolution=False)
+pretrain_weights = torch.load('knresnet50_imagenet.pth')['model']
+kn_model.load_state_dict(pretrain_weights)
+
+```
 ## Video Presentation
 The video presentation of the KernelNorm paper is available at YouTube:
 https://youtu.be/V7fQTc6MNSE

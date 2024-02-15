@@ -111,7 +111,7 @@ Please use our another repository dedicated to differentially private learning: 
 https://github.com/reza-nasirigerdeh/dp-torch
 
 ## Pretrained KNResNets
-The weights of the KNResNet18/34/50 models trained on ImageNet is available in the following: </br >
+The weights of the KNResNet18/34/50 models trained on ImageNet are available in the following: </br >
 
 | Model                    | Top-1 Accuracy | Weights                                                                                                       |
 |:-------------------------|:---------------|:--------------------------------------------------------------------------------------------------------------|
@@ -124,6 +124,10 @@ The weights of the KNResNet18/34/50 models trained on ImageNet is available in t
 <img src="imgs/legend.png" width="450" height="30">
 <img src="imgs/knresnet50-imagenet.png" width="801" height="260">
 </p>
+
+## Video Presentation
+The video presentation of the KernelNorm paper is available at YouTube:
+https://youtu.be/V7fQTc6MNSE
 
 ## Citation
 If you use **norm-torch** in your study, please cite the KernelNorm paper: <br />

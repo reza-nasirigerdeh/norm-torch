@@ -89,6 +89,15 @@ OMP_NUM_THREADS=64 NCCL_P2P_LEVEL=NVL torchrun --nproc_per_node=8 simulate_multi
 To reproduce the results in the KernelNorm paper, please follow the below instructions: </br >
 ### Image classification (Table1, Table2, and ConvNextTiny)
 The reproducibility bash scripts have been provided in the ["reproducibility"](reproducibility) folder of this repo.
+```
+cd reproducibility
+./table1-kn.sh
+./table1-bn.sh
+./table1-gn.sh
+./table1-ln.sh
+./table2.sh
+./convnext.sh
+```
 
 ### Semantic segmentation (Table3)
 The corresponding models have been provided in the ["segmentation"](models/segmentation) directory of this repo.
